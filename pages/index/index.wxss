@@ -1,0 +1,107 @@
+/**index.wxss**/
+Page {
+    text-align: center;
+}
+
+.img-width {
+    width: 100%;
+}
+
+.card {
+    margin: 10px;
+    position: relative;
+    /** 相对定对 **/
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.bg {
+    border-radius: 5px;
+    /** 圆角 **/
+    box-shadow: 2px 2px 5px #5f687e;
+    /** 阴影 **/
+    /* filter: blur(1px); */
+}
+
+.index-hd {
+    padding: 40px 40px 20px;
+    text-align: center;
+}
+
+.index-desc {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, .5);
+    font-size: 14px;
+}
+
+.index-logo {
+    width: 30%;
+    align-self: center;
+}
+
+.weui-cells {
+    top: 20rpx;
+    left: 10rpx;
+    right: 10rpx;
+    color: lightcyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* line-height: 1.41176471;
+    border-top: .5px solid lightcyan;
+    border-bottom: .5px solid lightcyan; */
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+ 
+.weui-cell {
+    padding: 16px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.weui-cell__bd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1
+}
+
+
+.weui-input {
+    margin-left: 10px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    /* outline: lightcyan groove 0.1rem; */
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    /* height: 1.41176471em; */
+    /* line-height: 1.41176471; */
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.btn-run {
+    bottom: 30px;
+    right: 150px;
+}
+
+.btn-qrCode {
+    bottom: 30px;
+    right: 10px;
+}
+
+.btn {
+    background: inherit;
+    color: lightcyan;
+    box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}

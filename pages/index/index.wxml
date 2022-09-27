@@ -1,0 +1,45 @@
+<!-- <mp-navigation-bar title="小程序官方组件展示" back="{{false}}"></mp-navigation-bar> -->
+<scroll-view class="page-scroll-view" scroll-y type="list">
+    <!-- 展示 -->
+    <view class="index">
+        <view class="index-hd">
+            <image class="index-logo" mode="widthFix" src="/pages/img/logo.png"></image>
+            <text class="index-desc">
+                <!-- 以下将展示小程序官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见 -->
+                请将以下页面的跳转时间（秒）间隔、运行次数、二维码图片等配置完毕，点击运行即可 ^_^！
+                <!-- <text class="weui-agree__link" bindtap="navToDoc">小程序开发文档</text> -->
+            </text>
+        </view>
+    </view>
+    <!-- 业务 -->
+    <view class="card">
+        <image class="img-width bg" mode="widthFix" src = "/pages/img/bg.jpg"></image>
+        <!-- <view class="title position-absolute"> hello {{wording}}! --Quincy</view> -->
+        <!-- <view class="view-counts">
+            <view class="position-absolute">次数：</view>
+            <input class="input" auto-focus placeholder="将会获取焦点"/>
+        </view> -->
+        <view class="position-absolute weui-cells">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">间隔时间</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type="text" name="key" value="{{timesGap}}" bindinput="timesGapChanged"></input>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">次数</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" focus type="text" value="{{counts}}" bindinput="countsChanged"></input>
+                </view>
+            </view>
+        </view>
+        <!-- 按钮 -->
+        <button class="position-absolute btn-run btn" style = "width: 120px; height: 40px;" bindtap="reset">reset</button>
+        <button class="position-absolute btn-qrCode btn" style = "width: 120px; height: 40px;" bindtap="qrCodeToUrl">go -></button>
+    </view>
+</scroll-view>
+
